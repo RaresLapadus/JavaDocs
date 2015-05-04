@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="MySQL - zth_17@localhost" uuid="9901df1a-12b2-41a7-9406-371a181f9d40">
+      <secret-storage>master_key</secret-storage>
+      <user-name>root</user-name>
+      <schema-pattern>zth_17.*</schema-pattern>
+      <default-schemas>zth_17.*</default-schemas>
+    </data-source>
+  </component>
+</project>
