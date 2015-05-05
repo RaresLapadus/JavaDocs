@@ -33,6 +33,33 @@
     %>
     <tr>
         <!--TODO de completat cu cod pentru a afisa detaliile locatiei cu id-ul trimis din locationlist.jsp in momentul in care se acceseaza link-ul 'View'-->
+
+        <%
+            LocationDao locationDao = new LocationDao();
+            String s = request.getParameter("id");
+            Location location = locationDao.getLocationById(Integer.valueOf(s));
+
+        %>
+
+        <td>
+            <%=location.getId()%>
+        </td>
+        <td>
+            <%=location.getStreetAddress()%>
+        </td>
+        <td>
+            <%=location.getPostalCode()%>
+        </td>
+        <td>
+            <%=location.getCity()%>
+        </td>
+        <td>
+            <%=location.getStateProvince()%>
+        </td>
+        <td>
+            <a href="locationView.jsp?id=<%=location.getId()%>">View</a>
+        </td>
+
     </tr>
 
     </tbody>
